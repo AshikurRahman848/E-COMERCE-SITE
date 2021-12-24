@@ -1,25 +1,22 @@
 <footer id="htc__footer">
             <!-- Start Footer Widget -->
             <div class="footer__container bg__cat--1">
-                <div class="container">
+                <div class="container p-5">
                     <div class="row">
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="footer">
-                                <h2 class="title__line--2">ABOUT US</h2>
+                                <h2 class="title__line--5">ABOUT US</h2>
                                 <div class="ft__details">
-                                    <p>This is our online based Mango Website .We provide authentic mango from Rajshahi.We delivered mango all over bangladesh by courier service </p>
+                                    <p>This is an online based Mango shop. The fresh, formalin free mangoes come from our own large scale mango garden in Rajshahi. We deliver mango all over Bangladesh by courier service </p>
                                     <div class="ft__social__link">
                                         <ul class="social__link">
-                                            <li><a href="#"><i class="icon-social-twitter icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-instagram icons"></i></a></li>
+                                            <li><a href="https://www.instagram.com/jahuratamanna/"><i class="icon-social-instagram icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-facebook icons"></i></a></li>
+                                            <li><a href="https://www.facebook.com/mangobazarfruits"><i class="icon-social-facebook icons"></i></a></li>
 
-                                            <li><a href="#"><i class="icon-social-google icons"></i></a></li>
-
-                                            <li><a href="#"><i class="icon-social-linkedin icons"></i></a></li>
+                                            <li><a href="https://www.linkedin.com/in/ashikur-rahman-9968b41a8/"><i class="icon-social-linkedin icons"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -29,7 +26,7 @@
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
                             <div class="footer">
-                                <h2 class="title__line--2">information</h2>
+                                <h2 class="title__line--5">information</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         <li><a href="#">About us</a></li>
@@ -42,24 +39,15 @@
                         <!-- End Single Footer Widget -->
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
-                            <div class="footer">
-                                <h2 class="title__line--2">my account</h2>
-                                <div class="ft__inner">
-                                    <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Login</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                         </div>
                         <!-- End Single Footer Widget -->
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40 smt-40">
                             <div class="footer">
-                                <h2 class="title__line--2">Our service</h2>
+                                <h2 class="title__line--5">Our service</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
-                                        <li><a href="#">My Account</a></li>
                                         <li><a href="#">Login</a></li>
                                     </ul>
                                 </div>
@@ -69,7 +57,7 @@
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-3 col-sm-6 col-xs-12 xmt-40 smt-40">
                             <div class="footer">
-                                <h2 class="title__line--2">Any Query? </h2>
+                                <h2 class="title__line--5">Any Query? </h2>
                                 <div class="ft__inner">
                                     <div class="news__input">
                                         <input type="text" placeholder="Your Mail*">
@@ -93,7 +81,7 @@
                         <div class="col-xs-12">
                             <div class="copyright__inner">
                                 <p>Copyright©  MangoBazar 2021. All right reserved.</p>
-                                <a href="#"><img src="images/others/shape/paypol.png" alt="payment images"></a>
+                                <a href="#"><img src="images/others/shape/bkash.jpg" alt="payment images " class="img-fluid alt=" " width="200" height="40"></a>
                             </div>
                         </div>
                     </div>

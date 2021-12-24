@@ -1,4 +1,16 @@
+<?php
+require('connection.inc.php');
+require('functions.inc.php');
+require('add_to_cart.inc.php');
+$cat_res=mysqli_query($con,"select * from categories where status=1 order by categories asc");
+$cat_arr=array();
+while($row=mysqli_fetch_assoc($cat_res)){
+	$cat_arr[]=$row;	
+}
 
+$obj=new add_to_cart();
+$totalProduct=$obj->totalProduct();
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -31,17 +43,22 @@
                         <div class="menumenu__container clearfix">
                             <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                                 <div class="logo">
-                                <a class="navbar-brand" href="#">
-                <img src="images/mango.jpg" alt="" width="50" height="40" class="d-inline-block align-text-top">
-                MangoBazar
-              </a>
+                                <a class="navbar-brand" href="#"> 
+                                <img class= " border rounded-circle img" src="images/logo/mangologo.png" alt="" width="100" height="40" class="d-inline-block align-text-top"> MangoBazar
+                                </a>
                                 </div>
                             </div>
                             <div class="col-md-7 col-lg-7 col-sm-5 col-xs-3">
                                 <nav class="main__menu__nav hidden-xs hidden-sm">
                                     <ul class="main__menu">
                                         <li class="drop"><a href="index.php">Home</a></li>
-                                        
+                                        <?php
+										foreach($cat_arr as $list){
+											?>
+											<li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
+											<?php
+										}
+										?>
                                         <li><a href="contact.php">contact</a></li>
                                     </ul>
                                 </nav>
@@ -50,7 +67,13 @@
                                     <nav id="mobile_dropdown">
                                         <ul>
                                             <li><a href="index.php">Home</a></li>
-                                            
+                                            <?php
+											foreach($cat_arr as $list){
+												?>
+												<li><a href="categories.php?id=<?php echo $list['id']?>"><?php echo $list['categories']?></a></li>
+												<?php
+											}
+											?>
                                             <li><a href="contact.php">contact</a></li>
                                         </ul>
                                     </nav>
@@ -62,7 +85,12 @@
                                         <a href="#"><i class="icon-magnifier icons"></i></a>
                                     </div>
                                     <div class="header__account">
-                                       
+                                        <?php if(isset($_SESSION['USER_LOGIN'])){
+											echo '<a href="logout.php">Logout</a> <a href="my_order.php">My Order</a>';
+										}else{
+											echo '<a href="login.php">Login/Register</a>';
+										}
+										?>
 										
                                     </div>
                                     <div class="htc__shopping__cart">
